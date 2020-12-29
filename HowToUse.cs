@@ -16,6 +16,9 @@ When you are using another application, simple select
 You can then paste this clip into your application using the
 standard ""Ctrl-v"" command.
 
+The other clipboard slots work the same, just replace F1
+with the slot you would like to copy, 5 is F5.
+
 It's that's easy!";
 
         public HowToUse()

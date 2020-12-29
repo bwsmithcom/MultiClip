@@ -12,7 +12,9 @@ namespace MultiClip
     public partial class MultiClip : Form
     {
         private Board board;
-        private string jsonFile;
+        private Settings settings;
+        private string jsonFileBoard;
+        private string jsonFileSettings;
         private KeyboardHook hook1 = new KeyboardHook();
         private KeyboardHook hook2 = new KeyboardHook();
         private KeyboardHook hook3 = new KeyboardHook();
@@ -31,6 +33,7 @@ namespace MultiClip
             InitializeComponent();
 
             board = new Board();
+            settings = new Settings();
 
             string path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             StringBuilder filePath = new StringBuilder(path);
@@ -39,13 +42,14 @@ namespace MultiClip
             filePath.Append(Path.DirectorySeparatorChar);
             filePath.Append(Constant.NAME);
 
-            jsonFile = new StringBuilder(filePath.ToString()).Append(Path.DirectorySeparatorChar).Append(Constant.JSON_FILE).ToString();
+            jsonFileBoard = new StringBuilder(filePath.ToString()).Append(Path.DirectorySeparatorChar).Append(Constant.JSON_FILE).ToString();
+            jsonFileSettings = new StringBuilder(filePath.ToString()).Append(Path.DirectorySeparatorChar).Append("Settings.json").ToString();
             if (Directory.Exists(filePath.ToString()))
             {
-                if (File.Exists(jsonFile))
-                { 
+                if (File.Exists(jsonFileBoard))
+                {
                     // read the json file
-                    string json = File.ReadAllText(@jsonFile);
+                    string json = File.ReadAllText(jsonFileBoard);
                     if (json.Length > 0)
                     {
                         board = JsonConvert.DeserializeObject<Board>(json);
@@ -63,8 +67,18 @@ namespace MultiClip
                         SetTextBoxText(textBox12, board.Clip12);
                     }
                 }
+                if (File.Exists(jsonFileSettings))
+                {
+                    string json = File.ReadAllText(jsonFileSettings);
+                    if (json.Length > 0)
+                    {
+                        settings = JsonConvert.DeserializeObject<Settings>(json);
+                        this.DesktopLocation = settings.Location;
+                    }
+                }
             }
-            else {
+            else
+            {
                 // create the directory
                 Directory.CreateDirectory(filePath.ToString());
             }
@@ -108,10 +122,9 @@ namespace MultiClip
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Point p = this.DesktopLocation;
-
-
+        {           
+            settings.Location = this.DesktopLocation;
+            WriteToJson(settings, jsonFileSettings);
             Application.Exit();
         }
 
@@ -121,14 +134,19 @@ namespace MultiClip
             modal.Show();
         }
 
-        private void WriteToJson()
+        private void WriteToJson(object obj, string fileLocation)
         {
             JsonSerializer serializer = new JsonSerializer();
-            using (StreamWriter sw = new StreamWriter(@jsonFile))
+            using (StreamWriter sw = new StreamWriter(@fileLocation))
             using (JsonWriter writer = new JsonTextWriter(sw))
             {
-                serializer.Serialize(writer, board);
+                serializer.Serialize(writer, obj);
             }
+        }
+
+        private void WriteToJson()
+        {
+            WriteToJson(board, jsonFileBoard);
         }
 
         private void CopyToClipboard(string value)
