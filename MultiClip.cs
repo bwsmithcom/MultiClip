@@ -73,7 +73,7 @@ namespace MultiClip
                     if (json.Length > 0)
                     {
                         settings = JsonConvert.DeserializeObject<Settings>(json);
-                        this.DesktopLocation = settings.Location;
+                        this.Location = settings.Location;
                     }
                 }
             }
@@ -111,6 +111,8 @@ namespace MultiClip
             hook10.RegisterHotKey(controlKey, Keys.F10);
             hook11.RegisterHotKey(controlKey, Keys.F11);
             hook12.RegisterHotKey(controlKey, Keys.F12);
+
+            this.FormClosing += ExitToolStripMenuItem_Click;
         }
 
         private void SetTextBoxText(TextBox textBox, string value)
@@ -123,7 +125,7 @@ namespace MultiClip
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {           
-            settings.Location = this.DesktopLocation;
+            settings.Location = this.Location;
             WriteToJson(settings, jsonFileSettings);
             Application.Exit();
         }

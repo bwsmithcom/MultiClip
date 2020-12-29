@@ -44,7 +44,15 @@ namespace MultiClip
             this.setFromClipboard4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copy5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setFromClipboard5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy12ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.howToUseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ButCopy1 = new System.Windows.Forms.Button();
@@ -82,14 +90,6 @@ namespace MultiClip
             this.ButSet12 = new System.Windows.Forms.Button();
             this.ButCopy12 = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.howToUseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copy12ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -230,6 +230,62 @@ namespace MultiClip
             this.setFromClipboard5ToolStripMenuItem.Text = "Set From Clipboard 5";
             this.setFromClipboard5ToolStripMenuItem.Click += new System.EventHandler(this.setFromClipboard5ToolStripMenuItem_Click);
             // 
+            // copy6ToolStripMenuItem
+            // 
+            this.copy6ToolStripMenuItem.Name = "copy6ToolStripMenuItem";
+            this.copy6ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F6)));
+            this.copy6ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy6ToolStripMenuItem.Text = "Copy 6";
+            this.copy6ToolStripMenuItem.Click += new System.EventHandler(this.copy6ToolStripMenuItem_Click);
+            // 
+            // copy7ToolStripMenuItem
+            // 
+            this.copy7ToolStripMenuItem.Name = "copy7ToolStripMenuItem";
+            this.copy7ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F7)));
+            this.copy7ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy7ToolStripMenuItem.Text = "Copy 7";
+            this.copy7ToolStripMenuItem.Click += new System.EventHandler(this.copy7ToolStripMenuItem_Click);
+            // 
+            // copy8ToolStripMenuItem
+            // 
+            this.copy8ToolStripMenuItem.Name = "copy8ToolStripMenuItem";
+            this.copy8ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F8)));
+            this.copy8ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy8ToolStripMenuItem.Text = "Copy 8";
+            this.copy8ToolStripMenuItem.Click += new System.EventHandler(this.copy8ToolStripMenuItem_Click);
+            // 
+            // copy9ToolStripMenuItem
+            // 
+            this.copy9ToolStripMenuItem.Name = "copy9ToolStripMenuItem";
+            this.copy9ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F9)));
+            this.copy9ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy9ToolStripMenuItem.Text = "Copy 9";
+            this.copy9ToolStripMenuItem.Click += new System.EventHandler(this.copy9ToolStripMenuItem_Click);
+            // 
+            // copy10ToolStripMenuItem
+            // 
+            this.copy10ToolStripMenuItem.Name = "copy10ToolStripMenuItem";
+            this.copy10ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
+            this.copy10ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy10ToolStripMenuItem.Text = "Copy 10";
+            this.copy10ToolStripMenuItem.Click += new System.EventHandler(this.copy10ToolStripMenuItem_Click);
+            // 
+            // copy11ToolStripMenuItem
+            // 
+            this.copy11ToolStripMenuItem.Name = "copy11ToolStripMenuItem";
+            this.copy11ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F11)));
+            this.copy11ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy11ToolStripMenuItem.Text = "Copy 11";
+            this.copy11ToolStripMenuItem.Click += new System.EventHandler(this.copy11ToolStripMenuItem_Click);
+            // 
+            // copy12ToolStripMenuItem
+            // 
+            this.copy12ToolStripMenuItem.Name = "copy12ToolStripMenuItem";
+            this.copy12ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F12)));
+            this.copy12ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.copy12ToolStripMenuItem.Text = "Copy 12";
+            this.copy12ToolStripMenuItem.Click += new System.EventHandler(this.copy12ToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -239,10 +295,17 @@ namespace MultiClip
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // howToUseToolStripMenuItem
+            // 
+            this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.howToUseToolStripMenuItem.Text = "How To Use";
+            this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
+            // 
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.AboutToolStripMenuItem.Text = "About MultiClip...";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -618,69 +681,6 @@ namespace MultiClip
             this.textBox12.TabIndex = 34;
             this.textBox12.WordWrap = false;
             // 
-            // howToUseToolStripMenuItem
-            // 
-            this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.howToUseToolStripMenuItem.Text = "How To Use";
-            this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
-            // 
-            // copy6ToolStripMenuItem
-            // 
-            this.copy6ToolStripMenuItem.Name = "copy6ToolStripMenuItem";
-            this.copy6ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F6)));
-            this.copy6ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy6ToolStripMenuItem.Text = "Copy 6";
-            this.copy6ToolStripMenuItem.Click += new System.EventHandler(this.copy6ToolStripMenuItem_Click);
-            // 
-            // copy7ToolStripMenuItem
-            // 
-            this.copy7ToolStripMenuItem.Name = "copy7ToolStripMenuItem";
-            this.copy7ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F7)));
-            this.copy7ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy7ToolStripMenuItem.Text = "Copy 7";
-            this.copy7ToolStripMenuItem.Click += new System.EventHandler(this.copy7ToolStripMenuItem_Click);
-            // 
-            // copy8ToolStripMenuItem
-            // 
-            this.copy8ToolStripMenuItem.Name = "copy8ToolStripMenuItem";
-            this.copy8ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F8)));
-            this.copy8ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy8ToolStripMenuItem.Text = "Copy 8";
-            this.copy8ToolStripMenuItem.Click += new System.EventHandler(this.copy8ToolStripMenuItem_Click);
-            // 
-            // copy9ToolStripMenuItem
-            // 
-            this.copy9ToolStripMenuItem.Name = "copy9ToolStripMenuItem";
-            this.copy9ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F9)));
-            this.copy9ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy9ToolStripMenuItem.Text = "Copy 9";
-            this.copy9ToolStripMenuItem.Click += new System.EventHandler(this.copy9ToolStripMenuItem_Click);
-            // 
-            // copy10ToolStripMenuItem
-            // 
-            this.copy10ToolStripMenuItem.Name = "copy10ToolStripMenuItem";
-            this.copy10ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
-            this.copy10ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy10ToolStripMenuItem.Text = "Copy 10";
-            this.copy10ToolStripMenuItem.Click += new System.EventHandler(this.copy10ToolStripMenuItem_Click);
-            // 
-            // copy11ToolStripMenuItem
-            // 
-            this.copy11ToolStripMenuItem.Name = "copy11ToolStripMenuItem";
-            this.copy11ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F11)));
-            this.copy11ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy11ToolStripMenuItem.Text = "Copy 11";
-            this.copy11ToolStripMenuItem.Click += new System.EventHandler(this.copy11ToolStripMenuItem_Click);
-            // 
-            // copy12ToolStripMenuItem
-            // 
-            this.copy12ToolStripMenuItem.Name = "copy12ToolStripMenuItem";
-            this.copy12ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F12)));
-            this.copy12ToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.copy12ToolStripMenuItem.Text = "Copy 12";
-            this.copy12ToolStripMenuItem.Click += new System.EventHandler(this.copy12ToolStripMenuItem_Click);
-            // 
             // MultiClip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -727,6 +727,7 @@ namespace MultiClip
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MultiClip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MultiClip";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
